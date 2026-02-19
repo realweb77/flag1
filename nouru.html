@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Nauru</h1>
+    <title>Flag of Nauru</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e9ecef;
+        }
+
+        .nauru-flag {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background-color: #002B7F; /* Nauru Blue */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid #001a4d; /* Slight border for definition */
+        }
+
+        /* The horizontal yellow stripe across the center */
+        .yellow-stripe {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 16px; 
+            background-color: #FFC61E; /* Nauru Yellow */
+            transform: translateY(-50%);
+        }
+
+        /* The 12-pointed white star in the lower hoist-side quadrant */
+        .star {
+            position: absolute;
+            bottom: 30px; 
+            left: 65px;
+            width: 50px;
+            height: 50px;
+            background-color: #FFFFFF;
+            /* Generating a 12-pointed star mathematically using clip-path */
+            clip-path: polygon(
+                50% 0%, 55% 30%, 75% 7%, 64% 36%, 
+                93% 25%, 69% 45%, 100% 50%, 69% 55%, 
+                93% 75%, 64% 64%, 75% 93%, 55% 70%, 
+                50% 100%, 45% 70%, 25% 93%, 36% 64%, 
+                7% 75%, 31% 55%, 0% 50%, 31% 45%, 
+                7% 25%, 36% 36%, 25% 7%, 45% 30%
+            );
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nauru-flag">
+        <div class="yellow-stripe"></div>
+        <div class="star"></div>
+    </div>
+
+</body>
+</html>
